@@ -22,6 +22,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('djrichtextfield/', include('djrichtextfield.urls')),
     path('api/',include('newsfeed_api.urls'))
 ]
 
