@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News Feed Api Usage</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">News feed API</a>
+</nav>
+
+<div class="container">
+
+<br>
+<h4>Functionality</h4>
+<p>
+	This is a simple news feed API.
+	The functionality includes retrieval of news feed <br>in all categories,selected ones,or a particular article in detail.
+</p>
+<h4>Author</h4>
+<p>Glen S Abraham</p>
+<p>glenprojects666@gmail.com</p>
+
+<h4>Usage</h4>
+
+<dl>
+<dt> /api/news_feed </dt> <dd>Fetches all the available news in the order of latest first</dd>
+<dt> /api/news_feed/id </dt> <dd>Returns the descreptive view of a particular news article</dd>
+<dt> /api/news_feed/?cat=#category# </dt> <dd>Fetches specific news belonging to a category in the order of latest first</dd>
+<dt>Categories</dt><dd>BR-'Breaking'<br>IN-'International'<br>NT-'National'<br>ST-'State'<br>DT-'District'<br>LC-'Local'<br>CL-'Classified'<br>TC-'Technology'<br>SP-'Sports'.<br>(The parameters are case insensitive)<br>Ex /api/news_feed/?cat=nt</dd>
+
+
+</dt></dl>
+</div>
+</body>	
+		
+</html>		

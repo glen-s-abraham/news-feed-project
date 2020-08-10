@@ -17,12 +17,13 @@ from django.contrib import admin
 from django.urls import path,include
 from django.conf.urls.static import static
 from django.conf import settings
+from newsfeed_api import views
 
 
 
 urlpatterns = [
+    path('', views.documentation),
     path('admin/', admin.site.urls),
-    path('djrichtextfield/', include('djrichtextfield.urls')),
     path('api/',include('newsfeed_api.urls'))
 ]
 
